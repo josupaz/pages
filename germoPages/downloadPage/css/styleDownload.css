@@ -1,0 +1,221 @@
+body{
+    font-family: 'Grandstander', cursive;
+}
+
+
+
+/* ======================================Estilos de vista tarjeta====================================== */
+.card{
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  margin: 9px;
+  border-radius: 50px;
+  box-shadow: 7px 7px 7px #888;
+  transition: transform 500ms;
+}
+
+.title-card{
+  text-shadow: 0 0 3px #01581b;
+  font-weight: 900;
+  font-size: 6mm;
+  box-shadow: 0px 2px 0px 0px #888;
+}
+
+
+.img-card{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+}
+
+.icons-general{
+  margin-bottom: 40px;
+  padding: 3px;
+}
+
+.desctription-card{
+  box-shadow: 3px 0px 3px 3px #888;
+  margin-bottom: 30px;
+}
+
+.box-btn{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 80%);
+  padding: 20px;
+  color: rgb(0, 48, 4);
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #888;
+  transition: transform 1s;
+}
+
+.box-btn:hover {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  color: rgb(175, 255, 151);
+  text-decoration: none;
+  box-shadow: 11px 11px 11px #888;
+  transform: scale(1.1)
+}
+
+.card:hover{
+  background-color:rgb(235, 235, 235);
+  box-shadow: 10px 10px 10px #888;
+  transform: skew(2deg, 0deg);
+}
+
+/* ====================================== Estilos de vista detalle ====================================== */
+
+.detail{
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 7px #888;
+  text-align: left;
+}
+
+.title-card-detail{
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 5mm;
+  text-shadow: 0 0 3px #01581b;
+  max-width: 70px;
+}
+
+.img-card-detail{
+
+  position relative;
+  width: 55px;
+  height: 55px;
+  margin: 0px 60px;
+  padding-top: 5px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+
+}
+
+.description-card-detail{
+  font-size: 3mm;
+  box-shadow:none;
+  padding-top: 10px;
+  padding-right: 605px;
+  padding-left: 10px;
+  max-height: 30px;
+}
+
+.box-btn-detail{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  color: rgb(175, 255, 151);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #888;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+
+.box-btn-detail:hover {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 80%);
+  color: rgb(0, 48, 4);
+  text-decoration: none;
+  box-shadow: 4px 4px 4px #888;
+}
+
+.detail:hover{
+  background-color:rgb(235, 235, 235);
+  box-shadow: 10px 10px 10px #888;
+}
+
+
+/* ====================================== Interruptor cambio de vista ====================================== */
+
+.switch-general{
+    position: absolute;
+    margin: 30px;
+    border-right: 2px solid black; 
+    padding: 5px;
+}
+
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+   
+  /* Ocultamos el checkbox html */
+  .switch input {
+    display:none;
+  }
+   
+  /* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: rgb(1, 141, 129);
+  }
+   
+  /* Pintamos la perilla de control o slider usando el selector before */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: black;
+  }
+   
+  input:checked + .slider {
+    background-color: rgb(1, 148, 87);
+  }
+
+   
+  /* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+   
+  /* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+   
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+/*Configuracion pantalla responsive*/
+
+/*min screen*/
+@media(max-width: 767px){
+  .switch-general{
+    visibility: collapse;
+    }
+}   
+
+/*mid screen*/
+@media (min-width: 768px) and (max-width: 991px){
+    .switch-general{
+        visibility: collapse;
+        }
+}
+/*big screen*/
+@media(min-width: 992px){
+
+
+}
+
