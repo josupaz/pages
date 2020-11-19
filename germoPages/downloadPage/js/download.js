@@ -13,28 +13,32 @@ var titles = ["Office 2016",
   "KMSAuto 1.5.3",
   "Anydesk Particulares",
   "Anydesk didot",
-  "Anydesk Mega"];
+  "Anydesk Mega",
+  "Anydesk Dante"];
 
 var imgs = [
   "https://img.icons8.com/bubbles/100/000000/office-365.png",
   "https://img.icons8.com/color/100/000000/windows8.png",
   "https://img.icons8.com/color/100/000000/anydesk.png",
   "https://img.icons8.com/color/100/000000/anydesk.png",
+  "https://img.icons8.com/color/100/000000/anydesk.png",
   "https://img.icons8.com/color/100/000000/anydesk.png"];
 
 var descriptions = [
-  "Sin descripcion",
-  "Sin descripcion",
-  "Sin descripcion",
-  "Sin descripcion",
-  "Sin descripcion"];
+  "Multiversion, MultIdioma",
+  "Aplica en windows y Office 2004",
+  "no description",
+  "no description",
+  "no description",
+  "no description"];
 
 var urls = [
   "https://drive.google.com/file/d/1pQu1umdLCKVRnbtdO78_nP3A7WrtWCqF/view?usp=sharin",
   "http://dl.xytech.com.ar/KMSAUTO.rar",
   "https://get.anydesk.com/j7fO0983/AnyDesk_XYTech_Particulares.exe",
   "http://dl.xytech.com.ar/anydesk-clients/AnyDesk_XYTech_Client_didot.exe",
-  "http://dl.xytech.com.ar/anydesk-clients/AnyDesk_XYTech_Client_mega.exe"];
+  "http://dl.xytech.com.ar/anydesk-clients/AnyDesk_XYTech_Client_mega.exe",
+  "http://dl.xytech.com.ar/anydesk-clients/AnyDesk_XYTech_Client_dante.exe"];
 
  
 //--------------(--FIN--VAR--GLOBALES--)----------------------
