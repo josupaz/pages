@@ -14,22 +14,30 @@ body{
     position: relative;
     padding: 0;
     margin: 0;
-    max-height: 10vw !important;
 }
 
 /*---------------------------------*/
 /*Menu*/
 
+
+#logo-menu{
+    position: absolute;
+    left: 15%;
+    width: 150px;
+    height: 40px;
+}
+
 .full-menu{
     position: relative;
-    background: black;
+    background: #016AC3;
     height: 44px;
 }
 
 .medium-menu{
     position: absolute;
+    display: inline;
     cursor: pointer;
-    left:50%;
+    left: 50%;
     width: 510px;
     z-index: 10;
 }
@@ -41,7 +49,7 @@ list-style: none;
 
 .menu li span{
     display: block;
-    background-color: black;
+    background-color: #016AC3;
     color: lightblue;
     text-decoration: none;
     padding: 10px 15px;
@@ -70,7 +78,7 @@ list-style: none;
 
 .home{
     background-color: green;
-    border: solid 3px black;
+    border: solid 3px green;
 }
 
 /*---------------------------------*/
@@ -107,6 +115,11 @@ footer{
   
   /*mid screen*/
   @media (min-width: 768px) and (max-width: 991px){
+
+    #logo-menu{
+        left: 10%;
+    }
+
     .medium-menu{
         position: absolute;
         left: 35%;
