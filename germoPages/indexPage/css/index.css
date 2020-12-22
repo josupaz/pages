@@ -1,39 +1,39 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-color: #A1A1A1 ;
-    
+body {
+    background-color: #A1A1A1;
 }
 
-.container-fluid{
+.container-fluid {
     display: block;
     position: relative;
     padding: 0;
     margin: 0;
 }
 
+
 /*---------------------------------*/
+
+
 /*Menu*/
 
-
-#logo-menu{
+.logo-menu {
     position: absolute;
     left: 15%;
-    width: 150px;
     height: 40px;
+    padding-top: 3px;
 }
 
-.full-menu{
+.full-menu {
     position: relative;
     background: #016AC3;
     height: 44px;
 }
 
-.medium-menu{
+.medium-menu {
     position: absolute;
     display: inline;
     cursor: pointer;
@@ -42,12 +42,12 @@ body{
     z-index: 10;
 }
 
-
-ul, ol{
-list-style: none;
+ul,
+ol {
+    list-style: none;
 }
 
-.menu li span{
+.menu li span {
     display: block;
     background-color: #016AC3;
     color: lightblue;
@@ -55,76 +55,95 @@ list-style: none;
     padding: 10px 15px;
 }
 
-.menu li span:hover{
+.menu li span:hover {
     text-shadow: 1px 1px white;
     color: white;
 }
 
-.menu > li{
+.menu>li {
     float: left;
 }
 
-.menu li ul{
+.menu li ul {
     display: none;
     position: absolute;
 }
 
-.menu li:hover > ul{
-    display: block;    
+.menu li:hover>ul {
+    display: block;
 }
 
+
 /*---------------------------------*/
+
+
 /*Home*/
 
-.home{
+.home {
     background-color: green;
-    border: solid 3px green;
+    border: solid 3px black;
 }
 
+.home-sub {
+    text-align: center;
+    border: solid 1px black;
+}
+
+
 /*---------------------------------*/
+
+
 /*Contact*/
 
-.contact{
+.contact {
     background-color: red;
     display: none;
 }
 
 
 /*---------------------------------*/
+
+
 /*Footer*/
-footer{
+
+footer {
     background: black;
     color: white;
     text-align: center;
-
 }
 
 
 /*---------------------------------*/
+
+
 /*Configuracion pantalla responsive*/
 
+
 /*min screen*/
-@media(max-width: 768px){
-    .medium-menu{
+
+@media(max-width: 768px) {
+    .medium-menu {
         position: absolute;
         left: 0;
         width: 500px;
         padding: 0px 0px;
     }
-  }   
-  
-  /*mid screen*/
-  @media (min-width: 768px) and (max-width: 991px){
+}
 
-    #logo-menu{
+
+/*mid screen*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo-menu {
         left: 10%;
     }
-
-    .medium-menu{
+    .medium-menu {
         position: absolute;
         left: 35%;
     }
-  }
-  /*big screen*/
-  @media(min-width: 992px){  
-  }
+}
+
+
+/*big screen*/
+
+@media(min-width: 992px) {}
