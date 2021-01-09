@@ -1,103 +1,284 @@
+/*---------------------------------*/
+
+
+/*Generals*/
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: #A1A1A1;
+    background-color: rgb(161, 70, 5, 0.8);
+    overflow-x: hidden;
 }
 
-.container-fluid {
-    display: block;
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-
-/*---------------------------------*/
-
-
-/*Menu*/
-
-.logo-menu {
-    position: absolute;
-    left: 15%;
-    height: 40px;
-    padding-top: 3px;
-}
-
-.full-menu {
-    position: relative;
-    background: #016AC3;
-    height: 44px;
-}
-
-.medium-menu {
-    position: absolute;
-    display: inline;
-    cursor: pointer;
-    left: 50%;
-    width: 510px;
-    z-index: 10;
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-.menu li span {
-    display: block;
-    background-color: #016AC3;
-    color: lightblue;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu li span:hover {
-    text-shadow: 1px 1px white;
-    color: white;
-}
-
-.menu>li {
-    float: left;
-}
-
-.menu li ul {
-    display: none;
-    position: absolute;
-}
-
-.menu li:hover>ul {
-    display: block;
-}
-
-
-/*---------------------------------*/
-
-
-/*Home*/
-
-.home {
-    background-color: green;
-    border: solid 3px black;
-}
-
-.home-sub {
+.container {
+    align-items: center;
     text-align: center;
-    border: solid 1px black;
+}
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.div-relleno {
+    display: none;
 }
 
 
 /*---------------------------------*/
 
 
-/*Contact*/
+/*Logo-Titulo*/
 
-.contact {
-    background-color: red;
+h1 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 23px!important;
+}
+
+.logo-title {
+    display: block;
+    position: relative;
+    max-width: 177px;
+    left: 10px;
+    top: -90px;
+}
+
+.logoPrincipal {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    transform: scale(1);
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+}
+
+
+/*---------------------------------*/
+
+
+/*Separadores*/
+
+.full-separador {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-separador {
+    display: inline-flex;
+    width: auto;
+    height: 30px;
+}
+
+.div-separador {
+    position: relative;
+    left: -20px;
+    width: 80%;
+    display: inline-flex;
+    height: 2px;
+    background-color: black;
+}
+
+.first-bar {
     display: none;
+}
+
+
+/*---------------------------------*/
+
+
+/*Titles*/
+
+.title-visible {
+    visibility: visible!important;
+}
+
+.title-no-visible {
+    visibility: hidden;
+}
+
+.title-home {
+    display: none;
+}
+
+.title-products {
+    display: none;
+}
+
+.title-services {
+    display: none;
+}
+
+.title-dev {
+    display: none;
+}
+
+
+/*---------------------------------*/
+
+
+/*General - Pagina Principal*/
+
+.general {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.general-sub {
+    text-align: center;
+}
+
+.section-color {
+    color: darkgrey;
+    background-color: rgb(0, 0, 59, 0.8)!important;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+
+/*---------------------------------*/
+
+
+/*Varios, spread*/
+
+.spread-page-active {
+    display: inline!important;
+}
+
+.animation-page {
+    display: none;
+}
+
+
+/*Comodin / display none*/
+
+.display-none {
+    display: none!important;
+}
+
+
+/*Imagenes de redireccion a diferentes secciones*/
+
+.imgs-home-hv {
+    display: block;
+    align-items: center;
+    text-align: center;
+    max-width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.img-button {
+    padding: 10px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px rgb(0, 0, 0);
+    -moz-box-shadow: 5px 5px rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    transform: scale(1);
+    transition: transform 0.8s;
+}
+
+.img-button:hover {
+    transform: scale(1.2);
+    transition: transform 0.8s;
+    background-color: #fff;
+    -webkit-box-shadow: 6px 6px rgb(0, 0, 0);
+    -moz-box-shadow: 6px 6px rgb(0, 0, 0);
+    box-shadow: 6px 6px black;
+}
+
+.iconos-sin-sombra {
+    padding: 5px;
+    margin: 1px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+}
+
+.promotion-products {
+    display: inline-flex!important;
+}
+
+.promotion-products h3 {
+    padding-top: 10px;
+}
+
+.p-contacto-productos {
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0!important;
+}
+
+
+/*Imagenes estaticas productos*/
+
+.imgs-prod {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+/*---------------------------------*/
+
+
+/*Top Button*/
+
+#scroll {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #0c00af;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    z-index: 600;
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+    z-index: 610;
 }
 
 
@@ -107,8 +288,15 @@ ol {
 /*Footer*/
 
 footer {
+    margin-top: 30px;
+    display: block;
     background: black;
     color: white;
+    text-align: center;
+    z-index: 50;
+}
+
+footer p {
     text-align: center;
 }
 
@@ -121,29 +309,106 @@ footer {
 
 /*min screen*/
 
-@media(max-width: 768px) {
-    .medium-menu {
+@media(max-width: 991px) {
+    .container {
+        margin-top: 200px;
+    }
+    .div-relleno {
+        display: block;
+        width: 10px;
+        height: 200px;
+    }
+    .logo-title {
+        display: flex;
         position: absolute;
+        left: -10px;
+        top: 5px;
+    }
+    .logoPrincipal {
+        position: relative;
+        width: auto;
+        height: 100px;
+        top: 0;
         left: 0;
-        width: 500px;
-        padding: 0px 0px;
+    }
+    .backgroundWhiteLogoPrincipal {
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-radius: 15px 50px;
+        transform: scale(.7);
+        transition: transform .8s ease-in-out;
+    }
+    .imgs-home-hv {
+        display: block;
+        align-items: center;
+        text-align: center;
+        max-width: 80px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .img-button {
+        padding: 10px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 25px;
+        width: 100px;
+        cursor: pointer;
+    }
+    .imgs-prod {
+        margin-left: 3px;
+        margin-right: 3px;
+        height: 100px;
+        width: 100px;
+    }
+    .promotion-products h3 {
+        font-size: 15px;
+    }
+    .first-bar {
+        display: inline;
+    }
+    .promotion-products h4 {
+        font-size: 15px;
+    }
+    .title-no-visible {
+        visibility: hidden;
+    }
+    .title-home {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 93px;
+    }
+    .title-products {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 93px;
+    }
+    .title-services {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 93px;
+    }
+    .title-dev {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 93px;
     }
 }
 
 
 /*mid screen*/
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #logo-menu {
-        left: 10%;
-    }
-    .medium-menu {
-        position: absolute;
-        left: 35%;
+@media(max-width: 575px) {
+    .container {
+        margin-top: 200px;
     }
 }
 
-
-/*big screen*/
-
-@media(min-width: 992px) {}
+@media(max-width: 767px) {
+    .container {
+        margin-top: 200px;
+    }
+}
