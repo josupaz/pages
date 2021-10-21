@@ -1,9 +1,10 @@
 :root {
-    --Primario: rgb(255, 255, 255);
-    --Secundario: rgba(68, 115, 196, 0.603);
+    --Primary: rgb(127, 255, 211);
+    --Secundario: rgba(68, 115, 196);
     --PrimarioBis: rgb(217, 255, 127);
-    --SecundarioBis: rgb(33, 55, 94);
-    --Negro: rgb(12, 9, 26);
+    --SecundaryBis: rgb(33, 55, 94);
+    --Black: rgb(12, 9, 26);
+    --White: rgb(235, 235, 235);
 }
 
 body {
@@ -17,6 +18,28 @@ h2 {
     text-align: left;
 }
 
+.subtitle {
+    display: flex;
+    margin-top: -40px;
+    margin-left: -15px;
+    background-color: var(--Secundario);
+    max-width: 230px;
+    padding: 0px 15px;
+}
+
+.text {
+    font-size: 28px;
+    text-align: left;
+}
+
+.fix-text {
+    margin-top: -14px;
+}
+
+.logo {
+    height: 30px;
+}
+
 ul li {
     padding: 10px;
     text-decoration: none!important;
@@ -24,7 +47,7 @@ ul li {
 
 .menu-1 {
     height: 60px;
-    background: rgb(0, 0, 0);
+    background: var(--black);
 }
 
 .menu_h {
@@ -71,38 +94,15 @@ ul li {
 }
 
 .slider-1 {
-    background-image: url(../imagenes/slider4.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient(#64b3f4, #8FA73A);
 }
 
 .slider-2 {
-    background-image: url(../imagenes/slider18.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient( #8FA73A, #64b3f4);
 }
 
 .slider-3 {
-    background-image: url(../imagenes/slider19.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.slider-4 {
-    background-image: url(../imagenes/slider20.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.slider-5 {
-    background-image: url(../imagenes/slider5.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
+    background: linear-gradient( #64b3f4, #8FA73A);
 }
 
 .section {
@@ -124,10 +124,10 @@ ul li {
 .card-title {
     background-color: var(--Secundario);
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 5px;
     transform: scale(0.9);
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 
@@ -136,7 +136,7 @@ ul li {
 .idioma {
     padding-right: 10px;
     padding-top: 10px;
-    background-color: var(--Primario);
+    background-color: var(--White);
 }
 
 .switch {
@@ -159,7 +159,7 @@ ul li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--black);
     -webkit-transition: .1s;
     transition: .1s;
 }
@@ -177,7 +177,7 @@ ul li {
 }
 
 input:checked+.slider {
-    background-color: black;
+    background-color: var(--black);
 }
 
 input:focus+.slider {
@@ -215,18 +215,23 @@ section {
 /*empiezo formulario*/
 
 .h1F {
+    color: var(--White);
     text-align: center;
     margin: 10px;
+    margin-top: -40px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 3px -2px rgba(0, 0, 0, 0.75);
+    background-color: var(--SecundaryBis);
 }
 
 form {
     align-items: center;
-    background-color: var(--Secundario);
+    background-color: var(--SecundaryBis);
     margin: auto;
     width: 60%;
     padding: 2px;
     border-radius: 10px;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 1);
 }
 
 .form {
@@ -241,14 +246,14 @@ form .grupo {
 
 .inputF,
 textarea {
-    background-color: white!important;
-    background: var(--PrimarioBis);
+    background-color: var(--Black);
+    background: var(--White);
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-bottom: 1px solid var(--Black);
     resize: none;
 }
 
@@ -257,12 +262,13 @@ textarea {
 textarea:focus~label,
 textarea:valid~label {
     position: absolute;
-    top: -20px;
-    font-size: 12px;
+    top: -25px;
+    font-size: 16px;
+    color: var(--White);
 }
 
 .labelF {
-    color: var(--colorTextos);
+    color: var(--Black);
     font-size: 16px;
     position: absolute;
     left: 5px;
@@ -310,7 +316,7 @@ textarea:focus~.barra::before {
 
 .buttonF:hover {
     background: #a3a3a3;
-    color: rgb(0, 0, 0);
+    color: var(--black);
 }
 
 .btn-personalize {
@@ -327,9 +333,9 @@ textarea:focus~.barra::before {
     border-radius: 2px;
     text-decoration: none;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-    outline-color: var(--Negro);
+    outline-color: var(--black);
     outline-offset: 20px;
-    background-color: var(--Primario);
+    background-color: var(--White);
     text-shadow: 1px 1px 2px #ffffff;
 }
 
@@ -338,19 +344,61 @@ textarea:focus~.barra::before {
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 20px;
     padding: 20px;
-    background-color: var(--Primario);
+    background-color: var(--White);
     text-shadow: 1px 1px 2px #ffffff;
 }
 
 .map {
-    margin-top: -65px;
-    transform: scale(0.7)!important;
-    transition: transform 2s;
+    max-height: 600px;
+    margin-top: -600px;
 }
 
-.map:hover {
-    transform: scale(0.9)!important;
-    transition: transform 2s;
+.scope {
+    max-height: 170px;
+}
+
+.row-scope {
+    margin-top: 80px;
+}
+
+
+/*TABLA*/
+
+.table {
+    text-align: center;
+    z-index: 1000;
+}
+
+.table-title {
+    background-color: var(--SecundaryBis);
+}
+
+table#scope-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+thead.cabecera tr td {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+tbody.cuerpo tr td {
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+td {
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
 }
 
 
@@ -380,8 +428,7 @@ footer {
     width: 100%;
     padding: 50px 0px;
     background-image: url(../imagenes/background-footer.svg);
-    background-color: rgba(143, 167, 58, 0.596);
-    ;
+    background-color: #8FA73A;
     background-size: cover;
 }
 
@@ -391,13 +438,11 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.yth-logo {
-    padding-top: 8px;
-    padding-right: 8px;
-    height: 40px;
+.img_footer {
+    margin-bottom: -30px;
 }
 
 .logo2-titulo {
@@ -418,19 +463,19 @@ footer {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color: #7a7a7a;
+    color: var(--black);
     font-size: 18px;
 }
 
 .box__footer h2 {
     margin-bottom: 30px;
-    color: #343434;
+    color: var(--black);
     font-weight: 700;
 }
 
 .box__footer a {
     margin-top: 10px;
-    color: black;
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -451,19 +496,37 @@ footer {
 
 .box__copyright p {
     margin-top: 20px;
-    color: #7a7a7a;
+    color: var(--black);
 }
 
 .box__copyright hr {
     border: none;
     height: 1px;
-    background-color: #7a7a7a;
+    background-color: black;
 }
 
 @media screen and (max-width:1360px) {
     .btn-personalize {
         border-radius: 40px;
         padding: 15px 40px;
+    }
+    .text {
+        font-size: 22px;
+    }
+    .map {
+        margin-top: -650px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .map {
+        display: none;
+    }
+    thead.cabecera tr td {
+        font-size: 12px;
+    }
+    tbody.cuerpo tr td {
+        font-size: 10px;
     }
 }
 
@@ -480,12 +543,43 @@ footer {
     .navbar-nav {
         flex-direction: row!important;
     }
+    .text {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:950px) {
     .btn-personalize {
         border-radius: 40px;
         padding: 15px 20px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .subtitle {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .yth-logo {
+        height: 50px!important;
+    }
+    h3 {
+        font-size: 20px!important;
+    }
+    .map {
+        max-width: 400px!important;
+        max-height: 550px!important;
+    }
+    .card-title {
+        padding: 0!important;
+    }
+    thead.cabecera tr td {
+        font-size: 12px;
+    }
+    tbody.cuerpo tr td {
+        font-size: 10px;
     }
 }
 
@@ -509,25 +603,29 @@ footer {
     .navbar-nav {
         flex-direction: column!important;
     }
+    .text {
+        font-size: 16px;
+    }
+    .row-scope {
+        height: auto!important;
+    }
+    .table {
+        height: auto!important;
+    }
+    table#scope-table {
+        margin-top: 10px;
+    }
+    thead.cabecera tr td {
+        font-size: 10px;
+    }
+    tbody.cuerpo tr td {
+        font-size: 7px;
+    }
 }
 
-@media screen and (max-width:870px) {
-    .yth-logo {
-        height: 50px!important;
-    }
-    h3 {
-        font-size: 20px!important;
-    }
+@media screen and (max-width:500px) {
     .map {
-        max-width: 250px!important;
-        max-height: 500px!important;
-    }
-    .map:hover {
-        transform: scale(0.8)!important;
-        transition: transform 3s;
-    }
-    .card-title {
-        padding: 0!important;
+        margin-left: 100px!important;
     }
 }
 
@@ -535,6 +633,9 @@ footer {
     ul li {
         padding-top: 50px;
         padding-left: 50px;
+    }
+    .logo-principal {
+        width: 250px;
     }
 }
 
